@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataMap version="1" type="Principal">
+	<List>
+		<MapItem>
+			<Source label="admin2">
+				<SID>S-1-98-925972066-878786917-912602157-1697918307-959275315-758659128-809055077-862073394-926365232-67108864</SID>
+				<ShortName>admingroup2</ShortName>
+				<DisplayName>adminGroup2</DisplayName>
+				<PrincipalType>1</PrincipalType>
+				<Name>cn=adminGroup2,o=defaultWIMFileBasedRealm</Name>
+			</Source>
+			<Destination label="admin2">
+				<SID>S-1-96-858091107-1631088708-1852403044-1127359859-858092911-1869768516-628322421-628048690-1651065907-1127359853-1144202595-33583989</SID>
+				<ShortName>p8admins</ShortName>
+				<DisplayName>P8Admins</DisplayName>
+				<PrincipalType>1</PrincipalType>
+				<Name>cn=p8admins,ou=groups,o=ibm,c=us</Name>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="deadmin">
+				<SID>S-1-98-875641188-959918434-1630691885-825503031-942498870-758474081-962880566-825571378-929181751-67108864</SID>
+				<ShortName>deadmin</ShortName>
+				<DisplayName>deadmin</DisplayName>
+				<PrincipalType>0</PrincipalType>
+				<Name>uid=deadmin,o=defaultWIMFileBasedRealm</Name>
+			</Source>
+			<Destination label="deadmin">
+				<SID>S-1-95-627337589-1701004339-1768776801-1127359854-858092911-1702065476-841315186-858091331-1835166020-1665348133-1967403813-50331763</SID>
+				<ShortName>ceadmin</ShortName>
+				<DisplayName>ceadmin</DisplayName>
+				<PrincipalType>0</PrincipalType>
+				<Name>uid=ceadmin,ou=users,o=ibm,c=us</Name>
+			</Destination>
+		</MapItem>
+	</List>
+</DataMap>
