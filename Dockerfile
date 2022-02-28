@@ -11,6 +11,8 @@ COPY ./FDM /root/FDM/
 COPY ./OperationXMLs /root/FDM/deploy/OperationXMLs
 COPY ./Scripts /root/FDM/deploy/scripts
 
+RUN chmod -R 755 /root/FDM
+
 WORKDIR /root/FDM/deploy
 
 ENTRYPOINT ["/bin/bash"]
