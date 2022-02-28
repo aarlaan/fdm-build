@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample object store half map file for the IBM FileNet Deployment Manager
+An object store half map file holds identifying information about object stores from a single environment.  This same information is often found embedded in objects exported from the source P8 environment, and needs to be converted before importing those objects into a destination environment.    A source and destionation half map are used to create a single data map, which is used when converting exported objects.
+
+The simplest way to create an object store half map is from the FileNet Deployment Manager UI.
+An empty object store half map is created with each new environment configuration.
+Likewise, the easiest way to populate this file with values from a P8 environment is via the Retrieve Data action in the environment configuration editor in the Deployment Manager UI.
+You can automate the population of this file by calling the Deployment Manager's command line interface.
+IBM does not recommend editing this file directly unless you have a need to automate the retrieval of object store information beyond what is provided by that interface.
+
+The parent environment is determined by the location of the half map file, and is not contained within the file itself.
+
+Each Item element contains information about a single object store in the environment.
+	"_default" is a special case used when converting Workplace objects
+	
+	The "label" attribute contains a value which associates this item with an item in another half map that has the same label value
+	The "ID" element contains the guid that identifies the object store.
+	The "Name" element contains the display name of the object store.
+	The "SymbolicName" element contains the symbolic name of the object store.
+
+For information on valid syntax, please refer to the XML schema in HalfMap_ObjectStore.xsd.
+
+-->
+
+<HalfMap version="1" type="ObjectStore">
+	<List>
+		<Item label="_default">
+			<ID></ID>
+			<Name>_default</Name>
+			<SymbolicName>_default</SymbolicName>
+		</Item>
+		<Item label="OS1">
+			<ID>{3A92E2D0-6272-4ACC-BA08-AA5F303A667E}</ID>
+			<Name>Sample_OS1</Name>
+			<SymbolicName>Sample_OS1</SymbolicName>
+		</Item>
+		<Item label="OS2">
+			<ID>{EB346DAD-FA1E-4384-9D5B-A925F3244B43}</ID>
+			<Name>Sample_OS2</Name>
+			<SymbolicName>Sample_OS2</SymbolicName>
+		</Item>
+	</List>
+</HalfMap>

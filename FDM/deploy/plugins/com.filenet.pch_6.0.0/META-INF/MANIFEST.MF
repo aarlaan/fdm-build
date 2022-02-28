@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.filenet.pch
+Export-Package: com.filenet.pch;version="1.0.0";uses:="javax.swing"
+Bundle-Name: FileNet System Manager Listener Plug-in
+Bundle-Version: 6.0.0
+Bundle-ClassPath: listener.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: IBM Corporation
+
+

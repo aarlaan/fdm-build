@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample connection point half map file for the IBM FileNet Deployment Manager
+A connection point half map file holds identifying information about connection points from a single environment.
+
+The simplest way to create an connection point half map is from the FileNet Deployment Manager UI.
+An empty connection point half map is created with each new environment configuration.
+Likewise, the easiest way to populate this file with values from a P8 environment is via the Retrieve Data action in the environment configuration editor in the Deployment Manager UI.
+You can automate the population of this file by calling the Deployment Manager's command line interface.
+IBM does not recommend editing this file directly unless you have a need to automate the retrieval of connection ponit information beyond what is provided by that interface.
+
+The parent environment is determined by the location of the half map file, and is not contained within the file itself.
+
+Each Item element contains information about a single connection point in the environment.
+	
+	The "label" attribute contains a value which associates this item with an item in another half map that has the same label value
+	The "Name" element contains the name of the connection point
+	The "ObjectStore" element contains the symbolic name of the object store the connection point is associated with.  Can be blank
+	for connection points used by legacy workflows.
+
+For information on valid syntax, please refer to the XML schema in HalfMap_ConnectionPoint.xsd.
+
+-->
+
+<HalfMap type="ConnectionPoint" version="1">
+  <List>
+    <Item label='1'>
+      <Name>CP1</Name>
+      <ObjectStore>OS1</ObjectStore>
+      <IsolatedRegion>1</IsolatedRegion>
+    </Item>
+    <Item label='2'>
+      <Name>CP2</Name>
+      <ObjectStore>OS1</ObjectStore>
+      <IsolatedRegion>1</IsolatedRegion>
+    </Item>
+    <Item label='1'>
+      <Name>CP3</Name>
+      <ObjectStore></ObjectStore>
+      <IsolatedRegion>1</IsolatedRegion>
+    </Item>
+    <Item label='OS1'>
+      <Name>CP4</Name>
+      <ObjectStore></ObjectStore>
+      <IsolatedRegion>1</IsolatedRegion>
+    </Item>
+  </List>
+</HalfMap>

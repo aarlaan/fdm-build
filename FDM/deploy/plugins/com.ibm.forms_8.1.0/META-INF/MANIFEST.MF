@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.ibm.forms
+Export-Package: com.PureEdge,com.PureEdge.xfdl,com.PureEdge.error
+Bundle-Name: IBM Forms Streaming API
+Bundle-Version: 8.1.0
+Bundle-ClassPath: StreamingAPI.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7,JavaSE-1.6
+Bundle-Vendor: IBM Corporation
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample principal data map file for IBM FileNet Deployment Manager.
+An principal data map associates principal half map data from the source environment with principal half map data from 
+the destination environment. The resulting principal data map for the source-destination pair is used when converting 
+exported objects. An empty principal data map file is created automatically by Deployment Manager when you create a source-
+destination pair.
+
+Note: IBM does not recommend editing a data map file directly unless you have a need to automate the population of a data map, beyond what 
+is provided by the interface.
+
+The parent source-destination pair is determined by the location of the data map file, and is not contained within this file.
+
+Each MapItem element contains information about the source environment principals and the destination environment principals.
+The contents of the "Source" and "Destination" elements are copied from the corresponding "Item" elements in the source and 
+destination environment half maps. Refer to the principal half map sample for more information.
+
+For information on valid syntax, refer to the XML schema in DataMap_Principal.xsd.
+
+-->
+
+<DataMap version="1" type="Principal">
+	<List>
+		<MapItem>
+			<Source label="Grp1">
+				<SID>S-1-446469620-2681297696-2676808908-1198993414-475391124-905202540</SID>
+				<ShortName>AABA_Group</ShortName>
+				<DisplayName>AABA_Group</DisplayName>
+				<PrincipalType>1</PrincipalType>
+				<Name>CN=AABA_Group,OU=engineering,DC=APPLE</Name>
+			</Source>
+			<Destination label="Grp1">
+				<SID>S-1-5-21-2746971880-4028609951-2474406214-5489</SID>
+				<ShortName>TestSubGroup</ShortName>
+				<DisplayName>TestSubGroup</DisplayName>
+				<PrincipalType>1</PrincipalType>
+				<Name>TestSubGroup@eng.com</Name>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="Grp5">
+				<SID>S-1-446469620-2681297696-2041114497-1275520034-749742993-3338643313</SID>
+				<ShortName>OSAdmins</ShortName>
+				<DisplayName>OSAdmins</DisplayName>
+				<PrincipalType>1</PrincipalType>
+				<Name>CN=OSAdmins,OU=Shared,OU=Engineering,OU=FileNet,DC=APPLE</Name>
+			</Source>
+			<Destination label="Grp5">
+				<SID>S-1-5-21-2746971880-4028609951-2474406214-5435</SID>
+				<ShortName>Universal_Group</ShortName>
+				<DisplayName>Universal_Group</DisplayName>
+				<PrincipalType>1</PrincipalType>
+				<Name>Universal_Group@eng.com</Name>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="">
+				<SID>S-1-446469620-2681297696-2499296975-1301519923-2413041826-3883276235</SID>
+				<ShortName>CPEAdmin</ShortName>
+				<DisplayName>CPEAdmin</DisplayName>
+				<PrincipalType>0</PrincipalType>
+				<Name>CN=CPEAdmin,OU=Shared,OU=Engineering,OU=FileNet,DC=APPLE</Name>
+			</Source>
+			<Destination label="User5">
+				<SID>S-1-5-21-2746971880-4028609951-2474406214-3655</SID>
+				<ShortName>CPEAdmin</ShortName>
+				<DisplayName>CPEAdmin</DisplayName>
+				<PrincipalType>0</PrincipalType>
+				<Name>CPEAdmin@eng.com</Name>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="">
+				<SID>S-1-446469620-2681297696-2878666584-1112803829-234621076-1889768848</SID>
+				<ShortName>suser</ShortName>
+				<DisplayName>suser</DisplayName>
+				<PrincipalType>0</PrincipalType>
+				<Name>CN=suser,OU=Shared,OU=Engineering,OU=FileNet,DC=APPLE</Name>
+			</Source>
+			<Destination label="AdminU">
+				<SID>S-1-5-21-2746971880-4028609951-2474406214-3650</SID>
+				<ShortName>suser</ShortName>
+				<DisplayName>suser</DisplayName>
+				<PrincipalType>0</PrincipalType>
+				<Name>suser@eng.com</Name>
+			</Destination>
+		</MapItem>
+	</List>
+</DataMap>

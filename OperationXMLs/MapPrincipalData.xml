@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeploymentOperation deploymentTreeLocation="/root/FDM/cpetools-linux/fdm-linux/deploy/P8DeploymentData" version="5.2.1"> 
+	<MapData type="Principal"> 
+		<Pair>testcli</Pair> 
+	</MapData> 
+</DeploymentOperation>

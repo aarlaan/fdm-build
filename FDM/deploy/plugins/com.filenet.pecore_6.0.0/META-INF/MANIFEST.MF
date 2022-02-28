@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.filenet.pecore
+Export-Package: Twofish,filenet.pe.ce.wfeventhandler,filenet.pe.ceutil
+ s,filenet.pe.soap,filenet.vw.api,filenet.vw.base,filenet.vw.base.expr
+ ,filenet.vw.base.exprcomp,filenet.vw.base.logging,filenet.vw.base.uti
+ l,filenet.vw.integrator,filenet.vw.server,filenet.vw.soap,filenet.vw.
+ soap.transport,filenet.vw.soap.util,filenet.vw.sysutils,filenet.vw.to
+ olkit.utils,filenet.ws.api,filenet.ws.listener.utils,filenet.ws.utils
+ ,util
+Bundle-Name: Workflow System Java API Plug-in
+Bundle-Version: 6.0.0
+Bundle-ClassPath: pe.jar,peResources.jar,juddi.jar
+Require-Bundle: com.filenet.jace
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: IBM Corporation
+
+

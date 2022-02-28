@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.apache.commons.json
+Export-Package: org.apache.commons.json,org.apache.commons.json.utils,
+ org.apache.wink.common.model.json
+Bundle-Name: Apache JSON4J API
+Bundle-Version: 1.0.0
+Bundle-ClassPath: JSON4J_Apache.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7,JavaSE-1.6
+Bundle-Vendor: IBM Corporation
+
+

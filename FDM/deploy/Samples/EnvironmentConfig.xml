@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample environment configuration file for the IBM FileNet Deployment Manager
+The information in an environment configuration file identifies a P8 environment, its description and connection information.
+
+The simplest way to create an environment configuration is from the FileNet Deployment Manager UI.
+A new environment configuration can be created via the "New..." wizard, or an existing environment configuration can be copied from within the UI.
+Likewise, the easiest way to edit the parameters in this file and ensure valid values and syntax is via the Deployment Manager UI.
+IBM does not recommend editing this file directly unless you have a need to automate the creation or modification of an environment configuration.
+
+The name of the pair is take from the name of the folder containing the config file, and is not contained within the config file itself.
+
+For information on valid syntax, please refer to the XML schema in EnvironmentConfig.xsd.
+
+-->
+
+<EnvironmentConfig version="1">
+	<!--  The description is for user's information only, and serves no programmatic purpose -->
+	<Description>Something that describes this environment to the user</Description>
+	<!--  The connection information is used whenever the Deployment Manager needs to connect to the P8 system, for example when retrieving object store information -->
+	<Connection target="P8" use="yes">
+		<Type>http</Type>
+		<ApplicationServer>WebSphere</ApplicationServer>
+		<Server>Sample_CPE1</Server>
+		<Port>9080 - WebSphere Default</Port>
+		<Path>wsi/FNCEWS40MTOM/</Path>
+		<Url>http://Sample_CPE1:9080/wsi/FNCEWS40MTOM/</Url>
+		<UserName>p8admin</UserName>
+		<Password format="AES256" persist="no"/>
+	</Connection>
+  </EnvironmentConfig>

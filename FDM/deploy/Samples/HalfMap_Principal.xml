@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample security principal half map file for the IBM FileNet Deployment Manager
+A principal half map file holds identifying information about principals (users and groups) from a single environment.  This same information is often found embedded in objects exported from the source P8 environment, and needs to be converted before importing those objects into a destination environment.  A source and destionation half map are used to create a single data map, which is used when converting exported objects.
+
+The simplest way to create a principal half map is from the FileNet Deployment Manager UI.
+An empty principal half map is created with each new environment configuration.
+Likewise, the easiest way to populate this file with values from a P8 environment is via the Retrieve Data action in the environment configuration editor in the Deployment Manager UI.
+You can automate the population of this file by calling the Deployment Manager's command line interface.
+IBM does not recommend editing this file directly unless you have a need to automate the retrieval of principal information beyond what is provided by that interface.
+
+The parent environment is determined by the location of the half map file, and is not contained within the file itself.
+
+Each Item element contains information about a single principal in the environment.
+	The "label" attribute contains a value which associates this item with an item in another half map that has the same label value
+	The "SID" element contains the principal's unique security identifier.
+	The "ShortName" element contains the principal's short (login) name.
+	The "DisplayName" element contains the principal's display name.
+	The "PrincipalType" element indicates whether the principal is a user (0) or a group (1)
+
+For information on valid syntax, please refer to the XML schema in HalfMap_Principal.xsd.
+
+-->
+
+<HalfMap type="Principal" version="1">
+	<List>
+		<Item label="Admin">
+			<SID>S-1-5-21-1905461388-4280881285-1333276535-500</SID>
+			<ShortName>Administrator</ShortName>
+			<DisplayName>Administrator</DisplayName>
+			<PrincipalType>0</PrincipalType>
+			<Name>Administrator@eng.com</Name>
+		</Item>
+		<Item label="ENGAdmin">
+			<SID>S-1-5-21-1905461388-4280881285-1333276535-1119</SID>
+			<ShortName>ENG Admins</ShortName>
+			<DisplayName>ENG Admins</DisplayName>
+			<PrincipalType>1</PrincipalType>
+			<Name>ENG Admins@eng.com</Name>
+		</Item>
+		<Item label="Manager">
+			<SID>S-1-5-21-1905461388-4280881285-1333276535-1120</SID>
+			<ShortName>ENG Managers</ShortName>
+			<DisplayName>ENG Managers</DisplayName>
+			<PrincipalType>1</PrincipalType>
+			<Name>ENG Managers@eng.com</Name>
+		</Item>
+		<Item label="P8Admin">
+			<SID>S-1-5-21-1905461388-4280881285-1333276535-1614</SID>
+			<ShortName>p8admin</ShortName>
+			<DisplayName>p8admin</DisplayName>
+			<PrincipalType>0</PrincipalType>
+			<Name>p8admin@eng.com</Name>
+		</Item>
+	</List>
+</HalfMap>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample connection pont data map file for IBM FileNet Deployment Manager.
+An connection point data map associates connection points half map data from the source environment with connection point half map data from 
+the destination environment. The resulting connection point data map for the source-destination pair is used when converting 
+exported objects. An empty connection point data map file is created automatically by Deployment Manager when you create a source-
+destination pair.
+
+Note: IBM does not recommend editing a data map file directly unless you have a need to automate the population of a data map, beyond what 
+is provided by the interface.
+
+The parent source-destination pair is determined by the location of the data map file, and is not contained within this file.
+
+Each MapItem element contains information about the source environment connection point and the destination environment connection point.
+The contents of the "Source" and "Destination" elements are copied from the corresponding "Item" elements in the source and 
+destination environment half maps. Refer to the connection point half map sample for more information.
+
+For information on valid syntax, refer to the XML schema in DataMap_ConnectionPoint.xsd.
+
+-->
+
+<DataMap version="1" type="ConnectionPoint">
+	<List>
+		<MapItem>
+			<Source label="1">
+				<Name>CP1</Name>
+				<ObjectStore>OS1</ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Source>
+			<Destination label="1">
+				<Name>CP1</Name>
+				<ObjectStore>OS1</ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="1">
+				<Name>CP3</Name>
+				<ObjectStore></ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Source>
+			<Destination label="1">
+				<Name>CP1</Name>
+				<ObjectStore>OS1</ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="OS1">
+				<Name>CP4</Name>
+				<ObjectStore></ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Source>
+			<Destination label="OS1">
+				<Name>CP2</Name>
+				<ObjectStore>OS1</ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="2">
+				<Name>CP2</Name>
+				<ObjectStore>OS1</ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Source>
+			<Destination label="OS1">
+				<Name>CP2</Name>
+				<ObjectStore>OS1</ObjectStore>
+				<IsolatedRegion>1</IsolatedRegion>
+			</Destination>
+		</MapItem>
+	</List>
+</DataMap>

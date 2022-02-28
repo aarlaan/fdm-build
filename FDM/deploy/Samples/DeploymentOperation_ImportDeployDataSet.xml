@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample ImportDeployDataSet operation file for the IBM FileNet Deployment Manager.
+This operation imports to the destination environment, the data exported from the source environment. 
+Prior to importing, the exported data must be converted.
+
+An operation file contains the name of an operation, and parameters for that operation. The Deployment Manager 
+command line interface is driven by an operation file. Internally, the Deployment Manager UI also generates an operation file 
+for each operation invoked from the UI.
+
+Often the easiest way to generate an operation file for repeated use with the command-line interface, 
+is to perform a similar operation from the UI, and then use the temporary operation file created by the Deployment Manager as a 
+starting point.
+
+The Deployment Manager UI stores each temporary operation file in a time stamped folder under the Temp folder in the deployment 
+tree.
+
+The parameters in this operation file are documented in the "Deployment operation formats" topic in the online help.
+
+For information on valid syntax, please refer to the XML schema in DeploymentOperation.xsd.
+
+-->
+<DeploymentOperation deploymentTreeLocation="C:\DeploymentManager\SmokeTests\Test1" version="5.2.1">
+  <ImportDeployDataSet>
+    <DeleteCreatedFilesOnError value="true" />
+    <UpdateOption>UpdateIfNewer</UpdateOption>
+    <CreateOption>CreateAlways</CreateOption>
+    <WorkflowConfigurationOption>Merge</WorkflowConfigurationOption>
+    <Environment>SampleEnvironmentOne</Environment>
+    <DeployDataSet>C:\temp\ExportDataSet</DeployDataSet>
+    <OptionSetPath>C:\DeploymentManager\SmokeTests\Test1\OptionSets\_default.xml</OptionSetPath>
+    <StoragePolicy type="DefaultOnClassOnDestination">
+      <ID></ID>
+    </StoragePolicy>
+    <ImportSecurity value="true" />
+    <ImportOwner value="true" />
+    <ImportObjectId value="true" />
+    <ImportRetention value="false" />
+    <RemovePropertyDefinitions value="true" />
+    <UseOriginalTimestamps value="true" />
+    <TransferWorkflows value="false" />
+    <UpdateLocalizedProperties value="true" />
+    <Scripts>
+      <PreImportScript0 value="C:\ImportScriptSamples\PreImportClassPathTest.js" />
+      <PreImportScript1 value="C:\ImportScriptSamples\PreImportClassPathTestStandalone.js" />
+      <PreSaveScript0 value="C:\ImportScriptSamples\PreSaveStandaloneTest1.js" />
+      <PreSaveScript1 value="C:\ImportScriptSamples\PreSaveStandaloneTest2.js" />
+      <PostSaveScript0 value="C:\ImportScriptSamples\PostSaveTest.js" />
+      <PostImportScript0 value="C:\ImportScriptSamples\PostImportTest2.js" />
+    </Scripts>
+  </ImportDeployDataSet>
+</DeploymentOperation>

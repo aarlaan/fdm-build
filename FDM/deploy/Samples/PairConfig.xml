@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample source-destination pair configuration file for the IBM FileNet Deployment Manager.
+The information in a source-destination pair file is used to identify a source and destination environment, and an associated set of data maps.
+
+The simplest way to create a pair configuration is from the FileNet Deployment Manager UI.
+A new pair configuration can be created via the "New..." wizard, or an existing pair configuration can be copied from within the UI.
+Likewise, the easiest way to edit the parameters in this file and ensure valid values and syntax is via the Deployment Manager UI.
+IBM does not recommend editing this file directly unless you have a need to automate the creation or modification of a pair configuration.
+
+The name of the pair is take from the name of the folder containing the config file, and is not contained within the config file itself.
+
+For information on valid syntax, please refer to the XML schema in PairConfig.xsd.
+
+-->
+
+<PairConfig version="1">
+	<!--  The description is for user's information only, and serves no programmatic purpose -->
+	<Description>Sample_CPE1 to Sample_CPE2</Description>
+	
+	<!-- The Source tag's name attribute identifies the source-destination pair's source environment.  This string must match the name of the folder containing the source environment definition  -->
+	<Source name="Sample_CPE1"/>
+	<!-- The Destination tag's name attribute identifies the source-destination pair's destination environment.  This string must match the name of the folder containing the destination environment definition  -->
+	<Destination name="Sample_CPE2"/>
+	
+	<!-- 
+	Each DataFile element contains information about a data map file used for asset conversion.  
+	"ObjectStore" and "Principal " are the only valid types in this release.  
+	The value of the "use" attribute must be "yes" or "no".  If "yes", this data map will be used when converting assets.
+	-->
+	<DataFiles>
+		<DataFile type="ObjectStore" use="yes"/>
+		<DataFile type="Principal" use="yes"/>
+		<DataFile type="Service" use="yes"/>
+		<DataFile type="ConnectionPoint" use="yes"/>
+	</DataFiles>
+</PairConfig>

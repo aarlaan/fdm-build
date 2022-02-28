@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample object store data map file for IBM FileNet Deployment Manager.
+An object store data map associates object store half map data from the source environment with object store half map data from 
+the destination environment. The resulting object store data map for the source-destination pair is used when converting 
+exported objects. An empty object store data map file is created automatically by Deployment Manager when you create a source-
+destination pair.
+
+Note: IBM does not recommend editing a data map file directly unless you have a need to automate the population of a data map, beyond what 
+is provided by the interface.
+
+The parent source-destination pair is determined by the location of the data map file, and is not contained within this file.
+
+Each MapItem element contains information about the source environment object store and the destination environment object store.
+The contents of the "Source" and "Destination" elements are copied from the corresponding "Item" elements in the source and 
+destination environment half maps. Refer to the object store half map sample for more information.
+
+For information on valid syntax, refer to the XML schema in DataMap_ObjectStore.xsd.
+
+-->
+
+<DataMap version="1" type="ObjectStore">
+	<List>
+		<MapItem>
+			<Source label="OS1">
+				<ID>{3A92E2D0-6272-4ACC-BA08-AA5F303A667E}</ID>
+				<Name>Sample_OS1</Name>
+				<SymbolicName>Sample_OS1</SymbolicName>
+			</Source>
+			<Destination label="OS1">
+				<ID>{BE49A8CC-B5F6-4411-9929-E5F64168C621}</ID>
+				<Name>Destination_OS1</Name>
+				<SymbolicName>Destination_OS1</SymbolicName>
+			</Destination>
+		</MapItem>
+		<MapItem>
+			<Source label="OS2">
+				<ID>{EB346DAD-FA1E-4384-9D5B-A925F3244B43}</ID>
+				<Name>Sample_OS2</Name>
+				<SymbolicName>Sample_OS2</SymbolicName>
+			</Source>
+			<Destination label="OS2">
+				<ID>{6D92D8EA-95CD-4851-8C1B-3DF3DA7BEF74}</ID>
+				<Name>Destination_OS2</Name>
+				<SymbolicName>Destination_OS2</SymbolicName>
+			</Destination>
+		</MapItem>
+	</List>
+</DataMap>

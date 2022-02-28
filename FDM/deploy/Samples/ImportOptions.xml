@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2014
+All Rights Reserved
+
+This is a sample import options file for the IBM FileNet Deployment Manager
+It contains settings which can be applied to an import operation.
+
+For information on valid syntax, please refer to the XML schema in DeploymentOptions.xsd.
+
+-->
+
+<DeploymentOptions version="5.2.1">
+	<ImportOptions>
+		<Environment>oclv0176</Environment>
+		<DeployDataSet>C:\FDM\MattAuditTree\Environments\oclv0176\Assets\Audit Asset.converted</DeployDataSet>
+		<StoragePolicy type="PropertyOnExportedObject">
+		</StoragePolicy>
+		<DeleteCreatedFilesOnError value="false"/>
+		<CreateOption>CreateNotAllowed</CreateOption>
+		<UpdateOption>UpdateAlways</UpdateOption>
+		<AuditOption>AuditOnly</AuditOption>
+		<WorkflowConfigurationOption>Overwrite</WorkflowConfigurationOption>
+		<ImportSecurity value="false"/>
+		<ImportOwner value="false"/>
+		<ImportObjectId value="false"/>
+		<RemovePropertyDefinitions value="false"/>
+		<UseOriginalTimestamps value="false"/>
+		<TransferWorkflows value="true"/>
+		<UpdateLocalizedProperties value="true"/>
+		<ReportFileName>AuditFile</ReportFileName>
+	</ImportOptions>
+</DeploymentOptions>

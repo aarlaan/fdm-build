@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample service half map file for the IBM FileNet Deployment Manager
+A service half map file holds identifying information about service data from a single environment.
+This same information is often found embedded in objects exported from the source P8 environment, and needs to be converted before importing
+those objects into a destination environment.  A source and destionation half map are used to create a single data map, which is used when converting exported objects.
+
+The simplest way to create a service half map is from the FileNet Deployment Manager UI.
+An empty service half map is created with each new environment configuration.
+Likewise, the easiest way to populate this file with values from a P8 environment is via the Retrieve Data action in the environment configuration editor in the Deployment Manager UI.
+You can automate the population of this file by calling the Deployment Manager's command line interface.
+IBM does not recommend editing this file directly unless you have a need to automate the retrieval of service information beyond what is provided by that interface.
+
+The parent environment is determined by the location of the half map file, and is not contained within the file itself.
+
+Service data is organized into the following sub-types:
+
+	PESystemAdministration_F_WebServer
+	PESystemConfiguration_F_WebServer
+	PEPartnerLink
+	PESystemConfiguration_F_UDDIRegistries
+	PESystemConfiguration_F_WSRRRegistries
+	PEUserInfo
+	EFormHTTP
+	EFormJDBC
+	EFormODBC
+
+And their associated properties are as follows:
+
+PESystemAdministration_F_WebServer
+	Name
+	URL
+
+PESystemConfiguration_F_WebServer
+	Name
+	URL
+	
+PEPartnerLink
+	Name
+	URL
+	
+PESystemConfiguration_F_UDDIRegistries
+	Name
+	inquiryURL
+	publishURL
+	
+PESystemConfiguration_F_WSRRRegistries
+	Name
+	servername
+	port
+
+PEUserInfo
+	Name
+	EmailAddress
+	
+EFormHTTP
+	Name
+	URL
+	
+EFormJDBC
+	Name
+	Server
+	UserID
+	Password  (Encryption Provider, which implements IDeploymentCipher: com.filenet.deployment.modules.FormTemplateModule)
+	Driver
+	
+EFormODBC
+	Name
+	Server
+
+-->
+
+<HalfMap type="Service" version="1">
+	<List>
+		<Item label="" type="EFormJDBC">
+			<Driver>com.ibm.db2.jcc.DB2Driver</Driver>
+			<Name>Template1:1.0:LookupLastname:lookup:{539FED59-17CC-4359-8BEC-097743A1DC74}</Name>
+			<Password>dD9VXYZ12g=</Password>
+			<Server>jdbc:db2://abchost2:50000/AUTOMATE</Server>
+			<UserID>sa</UserID>
+		</Item>
+		<Item label="" type="PESystemAdministration_F_WebServer">
+			<Name>F_WebServer.1</Name>
+			<URL>http://abcwin13_NEW:9080/Workplace</URL>
+		</Item>
+		<Item label="" type="PESystemAdministration_F_WebServer">
+			<Name>F_WebServer.7</Name>
+			<URL>http://abcwinae1_NEW:9080/WorkplaceXT</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_UDDIRegistries">
+			<Name>Private</Name>
+			<inquiryURL>http://abcsun2:9080/uddisoap/inquiryapi</inquiryURL>
+			<publishURL>http://abcsun2:9080/uddisoap/publishapi</publishURL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WSRRRegistries">
+			<Name>WSRRRegistry.0</Name>
+			<port>9080</port>
+			<servername>winaddon07</servername>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.1</Name>
+			<URL>http://abcwin14:9080/Workplace</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.2</Name>
+			<URL>http://amber/idmws</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.3</Name>
+			<URL>http://ruby:222/openclient</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.4</Name>
+			<URL>http://qd/xyz</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.5</Name>
+			<URL>http://opal:555/wcm</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.6</Name>
+			<URL>http://abcwin12:999/recordManager</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.7</Name>
+			<URL>http://abcwin13:9080/WorkplaceXT</URL>
+		</Item>
+		<Item label="" type="PESystemConfiguration_F_WebServer">
+			<Name>F_WebServer.8</Name>
+			<URL>http://cm-zyx/widgets</URL>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>administrator</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>cglasgow@eng.com</EmailAddress>
+			<Name>cglasgow</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>lgonzalez@eng.com</EmailAddress>
+			<Name>lgonzalez</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>donlin@eng.com</EmailAddress>
+			<Name>dlin</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>domain admins@eng.com</EmailAddress>
+			<Name>domain admins</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>domain users</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>dsieg@eng.com</EmailAddress>
+			<Name>dsieg</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>jsmith@eng.com</EmailAddress>
+			<Name>intpeadmin</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>ktag</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>lsmith</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>peadmin</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>pwadministrator</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>pwconfiguration</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>sample@exch2k.local</EmailAddress>
+			<Name>qsmith</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress/>
+			<Name>qadams</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>tester1@sample.com</EmailAddress>
+			<Name>tester1</Name>
+		</Item>
+		<Item label="" type="PEUserInfo">
+			<EmailAddress>wmobig@eng.com</EmailAddress>
+			<Name>wmobig</Name>
+		</Item>
+	</List>
+</HalfMap>

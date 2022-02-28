@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><FileNetExportCatalog version="1">
+	<DeploymentTreeLocation>C:\FDM\cpetools-win\fdm-windows\deploy\P8DeploymentData</DeploymentTreeLocation>
+	<SourceEnvironment>grapery_docs</SourceEnvironment>
+	<ExportOperationFile>DeploymentOperation_Export.xml</ExportOperationFile>
+	<ExportManifestFile>grapery_docs.xml</ExportManifestFile>
+	<ExportLogFile>C:\FDM\cpetools-win\fdm-windows\deploy\P8DeploymentData\Temp\Run.2022.02.08.00.00.11\export.log</ExportLogFile>
+	<ConvertOperationFile/>
+	<SourcePrimaryObjectStoreName>docs</SourcePrimaryObjectStoreName>
+	<ExportStartTime>2022-02-08 00:00:11 IST</ExportStartTime>
+	<DatasetFiles>
+		<DatasetFile>deployDataSet1.xml</DatasetFile>
+	</DatasetFiles>
+	<ObjectListFile>ObjectList.xml</ObjectListFile>
+	<NumberOfObjectsExported>26</NumberOfObjectsExported>
+	<ExportEndTime>2022-02-08 00:01:00 IST</ExportEndTime>
+		<DestinationEnvironment/>
+	<DestinationPrimaryObjectStoreName>docs</DestinationPrimaryObjectStoreName>
+</FileNetExportCatalog>

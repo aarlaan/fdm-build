@@ -1,0 +1,7 @@
+<DeploymentOperation deploymentTreeLocation="C:\FDM\cpetools-win\fdm-windows\deploy\P8DeploymentData" version="5.2.1">
+	<ExportDeployDataSet deleteDestinationFilesOnError="true">
+		<Environment>grapery_docs</Environment>
+		<ExportManifest>C:\FDM\cpetools-win\fdm-windows\deploy\P8DeploymentData\Environments\grapery_docs\Assets\ExportManifests\grapery_docs.xml</ExportManifest>
+		<DeployDataSet>C:\FDM\cpetools-win\fdm-windows\deploy\P8DeploymentData\Environments\grapery_docs\Assets\grapery_docs</DeployDataSet>
+	</ExportDeployDataSet>
+</DeploymentOperation>

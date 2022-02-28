@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.filenet.jace
+Export-Package: com.filenet.api.action,com.filenet.api.admin,com.filen
+ et.api.authentication.jboss.login,com.filenet.api.collection,com.file
+ net.api.constants,com.filenet.api.core,com.filenet.api.engine,com.fil
+ enet.api.events,com.filenet.api.exception,com.filenet.api.jdbc,com.fi
+ lenet.api.meta,com.filenet.api.property,com.filenet.api.publishing,co
+ m.filenet.api.query,com.filenet.api.replication,com.filenet.api.secur
+ ity,com.filenet.api.sweep,com.filenet.api.util,com.filenet.apiimpl.au
+ thentication,com.filenet.apiimpl.authentication.util,com.filenet.apii
+ mpl.collection,com.filenet.apiimpl.constants,com.filenet.apiimpl.core
+ ,com.filenet.apiimpl.engine,com.filenet.apiimpl.exception,com.filenet
+ .apiimpl.jdbc,com.filenet.apiimpl.meta,com.filenet.apiimpl.property,c
+ om.filenet.apiimpl.query,com.filenet.apiimpl.smm,com.filenet.apiimpl.
+ transport,com.filenet.apiimpl.transport.ejb,com.filenet.apiimpl.trans
+ port.ejbstubs,com.filenet.apiimpl.util,com.filenet.apiimpl.wsi,com.fi
+ lenet.apiimpl.wsi.serialization,com.filenet.apiimpl.wsi.serialization
+ .core,com.filenet.apiimpl.wsi.serialization.operation,com.filenet.api
+ impl.wsi.serialization.property,com.filenet.apiimpl.wsi.serialization
+ .reference,org.omg.stub.javax.ejb
+Bundle-Name: Content Platform Engine Java API Plug-in
+Bundle-Version: 6.0.0
+Bundle-ClassPath: Jace.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: IBM Corporation
+
+

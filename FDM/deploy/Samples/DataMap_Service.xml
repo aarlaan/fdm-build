@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample service data map file for IBM FileNet Deployment Manager.
+A service data map associates service half map data from the source environment with service half map data from 
+the destination environment. The resulting service data map for the source-destination pair is used when converting 
+exported objects. An empty service data map file is created automatically by Deployment Manager when you create a source-
+destination pair.
+
+Note: IBM does not recommend editing a data map file directly unless you have a need to automate the population of a data map, beyond what 
+is provided by the interface.
+
+The parent source-destination pair is determined by the location of the data map file, and is not contained within this file.
+
+Each MapItem element contains information about the source environment services and the destination environment services.
+The contents of the "Source" and "Destination" elements are copied from the corresponding "Item" elements in the source and 
+destination environment half maps. Refer to the service half map sample for more information.
+
+For information on valid syntax, refer to the XML schema in DataMap_Service.xsd.
+
+Service data is organized into the following sub-types:
+
+	PESystemAdministration_F_WebServer
+	PESystemConfiguration_F_WebServer
+	PEPartnerLink
+	PESystemConfiguration_F_UDDIRegistries
+	PESystemConfiguration_F_WSRRRegistries
+	PEUserInfo
+	EFormHTTP
+	EFormJDBC
+	EFormODBC
+
+And their associated properties are as follows:
+
+PESystemAdministration_F_WebServer
+	Name
+	URL
+
+PESystemConfiguration_F_WebServer
+	Name
+	URL
+	
+PEPartnerLink
+	Name
+	URL
+	
+PESystemConfiguration_F_UDDIRegistries
+	Name
+	inquiryURL
+	publishURL
+	
+PESystemConfiguration_F_WSRRRegistries
+	Name
+	servername
+	port
+
+PEUserInfo
+	Name
+	EmailAddress
+	
+EFormHTTP
+	Name
+	URL
+	
+EFormJDBC
+	Name
+	Server
+	UserID
+	Password  (Encryption provider that implements IDeploymentCipher: com.filenet.deployment.modules.FormTemplateModule)
+	Driver
+	
+EFormODBC
+	Name
+	Server
+
+-->
+
+<DataMap version="1" type="Service">
+	<List>
+		<MapItem type="EFormJDBC">
+			<Source label="">
+				<Driver>com.ibm.db2.jcc.DB2Driver</Driver>
+				<Name>Template1:1.0:LookupLastname:lookup:{537FFD59-17CC-4359-8BEC-097743A1DC74}</Name>
+				<Password>dD9VWV9wU1g=</Password>
+				<Server>jdbc:db2://edp8host21:50000/AUTOMATE</Server>
+				<UserID>sa</UserID>
+			</Source>
+			<Destination label="">
+				<Driver>com.ibm.db2.jcc.DB2Driver</Driver>
+				<Name>Template1:1.0:LookupLastname:lookup:{537FFD59-17CC-4359-8BEC-097743A1DC74}</Name>
+				<Password>dD9VWV9wU1g=</Password>
+				<Server>jdbc:db2://edp8host21:50000/AUTOMATE</Server>
+				<UserID>sa</UserID>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemAdministration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.1</Name>
+				<URL>http://cm-intgwin13_NEW:9080/Workplace</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.1</Name>
+				<URL>http://cm-intgwin13_NEW:9080/Workplace</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemAdministration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.7</Name>
+				<URL>http://hq-intgwinae1_NEW:9080/WorkplaceXT</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.7</Name>
+				<URL>http://hq-intgwinae1_NEW:9080/WorkplaceXT</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_UDDIRegistries">
+			<Source label="">
+				<Name>Private</Name>
+				<inquiryURL>http://hq-intgsun2:9080/uddisoap/inquiryapi</inquiryURL>
+				<publishURL>http://hq-intgsun2:9080/uddisoap/publishapi</publishURL>
+			</Source>
+			<Destination label="">
+				<Name>Private</Name>
+				<inquiryURL>http://hq-intgsun2:9080/uddisoap/inquiryapi</inquiryURL>
+				<publishURL>http://hq-intgsun2:9080/uddisoap/publishapi</publishURL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WSRRRegistries">
+			<Source label="">
+				<Name>WSRRRegistry.0</Name>
+				<port>9080</port>
+				<servername>hq-winaddon07</servername>
+			</Source>
+			<Destination label="">
+				<Name>WSRRRegistry.0</Name>
+				<port>9080</port>
+				<servername>hq-winaddon07</servername>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.1</Name>
+				<URL>http://cm-intgwin14:9080/Workplace</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.1</Name>
+				<URL>http://cm-intgwin14:9080/Workplace</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.2</Name>
+				<URL>http://hqamber/idmws</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.2</Name>
+				<URL>http://hqamber/idmws</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.3</Name>
+				<URL>http://hqruby:222/openclient</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.3</Name>
+				<URL>http://hqruby:222/openclient</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.4</Name>
+				<URL>http://hqqd/xyz</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.4</Name>
+				<URL>http://hqqd/xyz</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.5</Name>
+				<URL>http://hqopal:555/wcm</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.5</Name>
+				<URL>http://hqopal:555/wcm</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.6</Name>
+				<URL>http://cm-intgwin12:999/recordManager</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.6</Name>
+				<URL>http://cm-intgwin12:999/recordManager</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.7</Name>
+				<URL>http://cm-intgwin13:9080/WorkplaceXT</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.7</Name>
+				<URL>http://cm-intgwin13:9080/WorkplaceXT</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PESystemConfiguration_F_WebServer">
+			<Source label="">
+				<Name>F_WebServer.8</Name>
+				<URL>http://cm-zyx/widgets</URL>
+			</Source>
+			<Destination label="">
+				<Name>F_WebServer.8</Name>
+				<URL>http://cm-zyx/widgets</URL>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>administrator</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>administrator</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>cglasgow@us.ibm.com</EmailAddress>
+				<Name>cglasgow</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>cglasgow@us.ibm.com</EmailAddress>
+				<Name>cglasgow</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>cgonzalez@us.ibm.com</EmailAddress>
+				<Name>cgonzalez</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>cgonzalez@us.ibm.com</EmailAddress>
+				<Name>cgonzalez</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>donlind@us.ibm.com</EmailAddress>
+				<Name>dlind</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>donlind@us.ibm.com</EmailAddress>
+				<Name>dlind</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>domain admins@us.ibm.com</EmailAddress>
+				<Name>domain admins</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>domain admins@us.ibm.com</EmailAddress>
+				<Name>domain admins</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>domain users</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>domain users</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>dsiegfried@us.ibm.com</EmailAddress>
+				<Name>dsiegfried</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>dsiegfried@us.ibm.com</EmailAddress>
+				<Name>dsiegfried</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>quynhdang@us.ibm.com</EmailAddress>
+				<Name>intgpeadmin</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>quynhdang@us.ibm.com</EmailAddress>
+				<Name>intgpeadmin</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>ktagawa</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>ktagawa</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>lsmith</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>lsmith</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>peadmin</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>peadmin</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>pwadministrator</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>pwadministrator</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>pwconfiguration</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>pwconfiguration</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>cathy@exch2k.local</EmailAddress>
+				<Name>qdang</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>cathy@exch2k.local</EmailAddress>
+				<Name>qdang</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress></EmailAddress>
+				<Name>tadams</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress></EmailAddress>
+				<Name>tadams</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>tester1@yahoo.com</EmailAddress>
+				<Name>tester1</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>tester1@yahoo.com</EmailAddress>
+				<Name>tester1</Name>
+			</Destination>
+		</MapItem>
+		<MapItem type="PEUserInfo">
+			<Source label="">
+				<EmailAddress>wlobig@us.ibm.com</EmailAddress>
+				<Name>wlobig</Name>
+			</Source>
+			<Destination label="">
+				<EmailAddress>wlobig@us.ibm.com</EmailAddress>
+				<Name>wlobig</Name>
+			</Destination>
+		</MapItem>
+	</List>
+</DataMap>

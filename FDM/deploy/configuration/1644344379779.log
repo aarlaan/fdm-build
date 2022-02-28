@@ -1,0 +1,472 @@
+!SESSION 2022-02-08 10:19:38.727 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=8.0.6.26 - pxa6480sr6fp26-20210216_01(SR6 FP26)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20210216_465732 (JIT enabled, AOT enabled)
+OpenJ9   - e5f4f96
+OMR      - 999051a
+IBM      - 358762e
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -o ./test/AnalyzeDataSet.xml
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -o ./test/AnalyzeDataSet.xml
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.129
+!MESSAGE Bundle com.filenet.deployment.common.nl not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.131
+!MESSAGE Bundle com.filenet.deployment.modules.nl not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.131
+!MESSAGE Bundle com.filenet.deployment.rcp.nl not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.141
+!MESSAGE Bundle org.eclipse.ant.core.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.142
+!MESSAGE Bundle org.eclipse.ant.core.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.142
+!MESSAGE Bundle org.eclipse.compare.core.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.142
+!MESSAGE Bundle org.eclipse.compare.core.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.143
+!MESSAGE Bundle org.eclipse.core.commands.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.144
+!MESSAGE Bundle org.eclipse.core.commands.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.144
+!MESSAGE Bundle org.eclipse.core.contenttype.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.145
+!MESSAGE Bundle org.eclipse.core.contenttype.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.145
+!MESSAGE Bundle org.eclipse.core.databinding.observable.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.145
+!MESSAGE Bundle org.eclipse.core.databinding.observable.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.146
+!MESSAGE Bundle org.eclipse.core.databinding.property.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.146
+!MESSAGE Bundle org.eclipse.core.databinding.property.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.147
+!MESSAGE Bundle org.eclipse.core.databinding.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.147
+!MESSAGE Bundle org.eclipse.core.databinding.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.148
+!MESSAGE Bundle org.eclipse.core.expressions.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.148
+!MESSAGE Bundle org.eclipse.core.expressions.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.149
+!MESSAGE Bundle org.eclipse.core.filesystem.linux.x86_64.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.149
+!MESSAGE Bundle org.eclipse.core.filesystem.linux.x86_64.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.150
+!MESSAGE Bundle org.eclipse.core.filesystem.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.150
+!MESSAGE Bundle org.eclipse.core.filesystem.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.150
+!MESSAGE Bundle org.eclipse.core.jobs.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.151
+!MESSAGE Bundle org.eclipse.core.jobs.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.151
+!MESSAGE Bundle org.eclipse.core.net.linux.x86_64.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.152
+!MESSAGE Bundle org.eclipse.core.net.linux.x86_64.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.152
+!MESSAGE Bundle org.eclipse.core.net.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.153
+!MESSAGE Bundle org.eclipse.core.net.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.153
+!MESSAGE Bundle org.eclipse.core.resources.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.153
+!MESSAGE Bundle org.eclipse.core.resources.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.154
+!MESSAGE Bundle org.eclipse.core.runtime.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.154
+!MESSAGE Bundle org.eclipse.core.runtime.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.155
+!MESSAGE Bundle org.eclipse.core.variables.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.156
+!MESSAGE Bundle org.eclipse.core.variables.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.157
+!MESSAGE Bundle org.eclipse.e4.core.commands.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.157
+!MESSAGE Bundle org.eclipse.e4.core.commands.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.157
+!MESSAGE Bundle org.eclipse.e4.core.contexts.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.158
+!MESSAGE Bundle org.eclipse.e4.core.contexts.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.158
+!MESSAGE Bundle org.eclipse.e4.core.di.annotations.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.158
+!MESSAGE Bundle org.eclipse.e4.core.di.annotations.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.159
+!MESSAGE Bundle org.eclipse.e4.core.di.extensions.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.159
+!MESSAGE Bundle org.eclipse.e4.core.di.extensions.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.160
+!MESSAGE Bundle org.eclipse.e4.core.di.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.160
+!MESSAGE Bundle org.eclipse.e4.core.di.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.161
+!MESSAGE Bundle org.eclipse.e4.core.services.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.161
+!MESSAGE Bundle org.eclipse.e4.core.services.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.162
+!MESSAGE Bundle org.eclipse.e4.emf.xpath.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.162
+!MESSAGE Bundle org.eclipse.e4.emf.xpath.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.163
+!MESSAGE Bundle org.eclipse.e4.ui.bindings.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.163
+!MESSAGE Bundle org.eclipse.e4.ui.bindings.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.163
+!MESSAGE Bundle org.eclipse.e4.ui.css.core.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.164
+!MESSAGE Bundle org.eclipse.e4.ui.css.core.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.165
+!MESSAGE Bundle org.eclipse.e4.ui.css.swt.theme.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.165
+!MESSAGE Bundle org.eclipse.e4.ui.css.swt.theme.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.165
+!MESSAGE Bundle org.eclipse.e4.ui.css.swt.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.166
+!MESSAGE Bundle org.eclipse.e4.ui.css.swt.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.166
+!MESSAGE Bundle org.eclipse.e4.ui.di.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.167
+!MESSAGE Bundle org.eclipse.e4.ui.di.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.167
+!MESSAGE Bundle org.eclipse.e4.ui.model.workbench.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.167
+!MESSAGE Bundle org.eclipse.e4.ui.model.workbench.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.168
+!MESSAGE Bundle org.eclipse.e4.ui.services.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.168
+!MESSAGE Bundle org.eclipse.e4.ui.services.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.169
+!MESSAGE Bundle org.eclipse.e4.ui.widgets.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.169
+!MESSAGE Bundle org.eclipse.e4.ui.widgets.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.170
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.addons.swt.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.170
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.addons.swt.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.171
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.renderers.swt.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.171
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.renderers.swt.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.171
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.swt.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.172
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.swt.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.172
+!MESSAGE Bundle org.eclipse.e4.ui.workbench3.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.173
+!MESSAGE Bundle org.eclipse.e4.ui.workbench3.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.173
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.173
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.174
+!MESSAGE Bundle org.eclipse.emf.common.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.174
+!MESSAGE Bundle org.eclipse.emf.common.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.175
+!MESSAGE Bundle org.eclipse.emf.ecore.change.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.175
+!MESSAGE Bundle org.eclipse.emf.ecore.change.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.176
+!MESSAGE Bundle org.eclipse.emf.ecore.xmi.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.176
+!MESSAGE Bundle org.eclipse.emf.ecore.xmi.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.177
+!MESSAGE Bundle org.eclipse.emf.ecore.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.177
+!MESSAGE Bundle org.eclipse.emf.ecore.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.177
+!MESSAGE Bundle org.eclipse.equinox.app.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.178
+!MESSAGE Bundle org.eclipse.equinox.app.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.178
+!MESSAGE Bundle org.eclipse.equinox.bidi.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.179
+!MESSAGE Bundle org.eclipse.equinox.bidi.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.179
+!MESSAGE Bundle org.eclipse.equinox.common.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.179
+!MESSAGE Bundle org.eclipse.equinox.common.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.180
+!MESSAGE Bundle org.eclipse.equinox.ds.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.181
+!MESSAGE Bundle org.eclipse.equinox.ds.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.181
+!MESSAGE Bundle org.eclipse.equinox.event.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.182
+!MESSAGE Bundle org.eclipse.equinox.event.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.182
+!MESSAGE Bundle org.eclipse.equinox.http.jetty.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.183
+!MESSAGE Bundle org.eclipse.equinox.http.jetty.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.183
+!MESSAGE Bundle org.eclipse.equinox.http.servlet.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.184
+!MESSAGE Bundle org.eclipse.equinox.http.servlet.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.184
+!MESSAGE Bundle org.eclipse.equinox.preferences.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.184
+!MESSAGE Bundle org.eclipse.equinox.preferences.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.185
+!MESSAGE Bundle org.eclipse.equinox.registry.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.185
+!MESSAGE Bundle org.eclipse.equinox.registry.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.186
+!MESSAGE Bundle org.eclipse.equinox.security.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.186
+!MESSAGE Bundle org.eclipse.equinox.security.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.187
+!MESSAGE Bundle org.eclipse.equinox.util.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.187
+!MESSAGE Bundle org.eclipse.equinox.util.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.188
+!MESSAGE Bundle org.eclipse.help.base.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.188
+!MESSAGE Bundle org.eclipse.help.base.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.188
+!MESSAGE Bundle org.eclipse.help.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.189
+!MESSAGE Bundle org.eclipse.help.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.189
+!MESSAGE Bundle org.eclipse.jetty.http.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.189
+!MESSAGE Bundle org.eclipse.jetty.http.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.191
+!MESSAGE Bundle org.eclipse.jface.databinding.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.192
+!MESSAGE Bundle org.eclipse.jface.databinding.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.192
+!MESSAGE Bundle org.eclipse.jface.text.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.193
+!MESSAGE Bundle org.eclipse.jface.text.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.193
+!MESSAGE Bundle org.eclipse.jface.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.193
+!MESSAGE Bundle org.eclipse.jface.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.194
+!MESSAGE Bundle org.eclipse.osgi.compatibility.state.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.194
+!MESSAGE Bundle org.eclipse.osgi.compatibility.state.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.195
+!MESSAGE Bundle org.eclipse.osgi.services.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.195
+!MESSAGE Bundle org.eclipse.osgi.services.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.195
+!MESSAGE Bundle org.eclipse.osgi.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.196
+!MESSAGE Bundle org.eclipse.osgi.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.196
+!MESSAGE Bundle org.eclipse.swt.gtk.linux.x86_64.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.197
+!MESSAGE Bundle org.eclipse.swt.gtk.linux.x86_64.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.197
+!MESSAGE Bundle org.eclipse.swt.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.197
+!MESSAGE Bundle org.eclipse.swt.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.198
+!MESSAGE Bundle org.eclipse.team.core.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.198
+!MESSAGE Bundle org.eclipse.team.core.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.199
+!MESSAGE Bundle org.eclipse.text.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.199
+!MESSAGE Bundle org.eclipse.text.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.200
+!MESSAGE Bundle org.eclipse.ui.console.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.200
+!MESSAGE Bundle org.eclipse.ui.console.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.200
+!MESSAGE Bundle org.eclipse.ui.forms.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.201
+!MESSAGE Bundle org.eclipse.ui.forms.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.201
+!MESSAGE Bundle org.eclipse.ui.intro.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.202
+!MESSAGE Bundle org.eclipse.ui.intro.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.202
+!MESSAGE Bundle org.eclipse.ui.trace.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.202
+!MESSAGE Bundle org.eclipse.ui.trace.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.203
+!MESSAGE Bundle org.eclipse.ui.workbench.texteditor.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.203
+!MESSAGE Bundle org.eclipse.ui.workbench.texteditor.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.204
+!MESSAGE Bundle org.eclipse.ui.workbench.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.204
+!MESSAGE Bundle org.eclipse.ui.workbench.nl2 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.204
+!MESSAGE Bundle org.eclipse.ui.nl1 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:40.205
+!MESSAGE Bundle org.eclipse.ui.nl2 not found.
+
+!ENTRY org.eclipse.equinox.launcher.gtk.linux.x86_64 2 0 2022-02-08 10:19:41.207
+!MESSAGE Could not resolve module: org.eclipse.equinox.launcher.gtk.linux.x86_64 [106]
+  Unresolved requirement: Fragment-Host: org.eclipse.equinox.launcher; bundle-version="[1.0.0,1.4.0)"
+
+
+!ENTRY org.eclipse.osgi 4 0 2022-02-08 10:19:41.207
+!MESSAGE Application error
+!STACK 1
+java.lang.NullPointerException
+	at com.filenet.apiimpl.util.BaseLogger.error(BaseLogger.java:551)
+	at com.filenet.apiimpl.util.BaseLogger.error(BaseLogger.java:544)
+	at com.filenet.deployment.common.Executor.execute(Executor.java:216)
+	at com.filenet.deployment.rcp.Application.start(Application.java:386)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)

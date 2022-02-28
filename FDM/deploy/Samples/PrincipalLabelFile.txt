@@ -1,0 +1,24 @@
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2008
+# All Rights Reserved
+
+# This is a sample principal label file for the IBM FileNet Deployment Manager
+
+# This file can be used as a filter when retrieving a principal half map from an LDAP repository.
+# 
+# The Deployment Manager will then query for only the shortnames listed below,
+# and will add the associated labels.  This is particularly useful for building the 
+# principal half map for a destination environment, since in that case it may not be 
+# practical to retrieve principals from exported objects.
+
+# Lines to be processed should follow the form "shortname,label"
+# The label is optional
+# Any whitespace around shortnames and labels will be discarded
+# Lines starting with "# " and completely empty lines are ignored as comments.
+
+# Following are a few sample shortnames with labels
+fnadmin, WidgetApplicationAdministrator
+fnusr, WidgetApplicationUser
+
+# Following is a sample shortname with no label:
+kraleigh

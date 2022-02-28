@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corp. 2008, 2014
+All Rights Reserved
+
+This is a sample RetrieveConnectionPointInfoFromDomain operation file for IBM FileNet Deployment Manager.
+This operation retrieves connection point information from a given Content Platform Engine.  The returned
+information is stored in a connection point half map file (either a merge or overwrite operation 
+on any data existing in the half map, depending on the mode attribute value).
+
+An operation file contains the name of an operation, and parameters for that operation. The Deployment Manager 
+command line interface is driven by an operation file. Internally, the Deployment Manager UI also generates an operation file 
+for each operation invoked from the UI.
+
+Often the easiest way to generate an operation file for repeated use with the command-line interface, 
+is to perform a similar operation from the UI, and then use the temporary operation file created by the Deployment Manager as a 
+starting point.
+
+The Deployment Manager UI stores each temporary operation file in a timestamped folder under the Temp folder in the deployment 
+tree.
+
+The parameters in this operation file are documented in the "Deployment operation formats" topic in the online help.
+
+For information on valid syntax, please refer to the XML schema in DeploymentOperation.xsd.
+
+-->
+<DeploymentOperation deploymentTreeLocation="C:\FDM\Brian" version="5.2.1">
+	<RetrieveConnectionPointInfoFromDomain mode="merge">
+		<Environment>Copy of oclv0019</Environment>
+	</RetrieveConnectionPointInfoFromDomain>
+</DeploymentOperation>

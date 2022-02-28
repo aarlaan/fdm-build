@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.filenet.imex
+Export-Package: com.filenet.api.imex,com.filenet.apiimpl.imex,com.file
+ net.imex,com.filenet.imex.impl,com.filenet.imex.impl.script,com.filen
+ et.imex.manifest,com.filenet.imex.script
+Bundle-Name: Content Platform Engine Import-Export Plug-in
+Bundle-Version: 6.0.0
+Bundle-ClassPath: imex.jar
+Require-Bundle: com.filenet.jace,org.apache.derby
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: IBM Corporation
+
+

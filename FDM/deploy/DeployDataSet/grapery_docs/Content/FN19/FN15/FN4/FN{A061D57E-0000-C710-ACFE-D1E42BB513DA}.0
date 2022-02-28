@@ -1,0 +1,5 @@
+#BPM Server Properties
+bpm.server.username=deadmin
+bpm.server.password=P@ssw0rdP@ssw0rd
+bpm.server.uri=https\://grapery1.fyre.ibm.com\:9443
+bpm.server.contextRoot=/rest/bpm/wle/
